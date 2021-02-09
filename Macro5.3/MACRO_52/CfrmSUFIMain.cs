@@ -2236,7 +2236,7 @@ namespace MACRO_52
                     this.b_Manual = false;
                     goto label_30;
                 }
-            label_25:
+
                 num2 = -1;
                 switch (num1)
                 {
@@ -2253,7 +2253,19 @@ namespace MACRO_52
             catch (Exception ex) when (ex is Exception & (uint)num1 > 0U & num2 == 0)
             {
                 ProjectData.SetProjectError(ex);
-                goto label_25;
+
+                num2 = -1;
+                switch (num1)
+                {
+                    case 2:
+                        if (Information.Err().Number != 76)
+                        {
+                            MiscFUncs.MsgBox_Renamed(Information.Err().Description + Conversions.ToString(Information.Err().Number), (short)48, "Error");
+                            goto label_30;
+                        }
+                        else
+                            goto label_30;
+                }
             }
             throw ProjectData.CreateProjectError(-2146828237);
         label_30:
@@ -2570,7 +2582,7 @@ namespace MACRO_52
                 }
                 while (num3 <= (short)4);
                 goto label_31;
-            label_26:
+
                 num2 = -1;
                 switch (num1)
                 {
@@ -2582,7 +2594,14 @@ namespace MACRO_52
             catch (Exception ex) when (ex is Exception & (uint)num1 > 0U & num2 == 0)
             {
                 ProjectData.SetProjectError(ex);
-                goto label_26;
+
+                num2 = -1;
+                switch (num1)
+                {
+                    case 2:
+                        MiscFUncs.MsgBox_Renamed("An error occured in 'ModifyDEG':\r" + Information.Err().Description, (short)48, "Error");
+                        goto label_31;
+                }
             }
             throw ProjectData.CreateProjectError(-2146828237);
         label_31:
@@ -2707,7 +2726,7 @@ namespace MACRO_52
                     ((_Recordset)recordset4).MoveNext();
                 }
                 goto label_19;
-            label_14:
+
                 num2 = -1;
                 switch (num1)
                 {
@@ -2719,7 +2738,14 @@ namespace MACRO_52
             catch (Exception ex) when (ex is Exception & (uint)num1 > 0U & num2 == 0)
             {
                 ProjectData.SetProjectError(ex);
-                goto label_14;
+
+                num2 = -1;
+                switch (num1)
+                {
+                    case 2:
+                        MiscFUncs.MsgBox_Renamed("An error occured in 'ModifyZKD:\r" + Information.Err().Description, (short)48, "Error");
+                        goto label_19;
+                }
             }
             throw ProjectData.CreateProjectError(-2146828237);
         label_19:

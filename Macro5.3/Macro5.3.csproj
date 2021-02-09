@@ -63,6 +63,7 @@
       <HintPath>..\src\dlls\MACRO5.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
     <Reference Include="msdatasrc">
       <HintPath>..\src\dlls\msdatasrc.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
