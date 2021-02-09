@@ -1550,29 +1550,42 @@ namespace MACRO_52
                 if (!this.b_Manual)
                 {
                     this.Dir1.Path = this.Drive1.Drive;
-                    goto label_9;
+                    if (num2 == 0)
+                        return;
+                    ProjectData.ClearProjectError();
+                    return;
+
                 }
                 else
-                    goto label_9;
-                label_4:
-                num2 = -1; 
-                switch (num1)
                 {
-                    case 2:
-                        MiscFUncs.MsgBox_Renamed(Information.Err().Description, (short)48, "Error accessing drive");
-                        goto label_9;
+                    if (num2 == 0)
+                        return;
+
+                    ProjectData.ClearProjectError();
+                    return;
                 }
+
             }
             catch (Exception ex) when (ex is Exception & (uint)num1 > 0U & num2 == 0)
             {
                 ProjectData.SetProjectError(ex);
-                goto label_4;
+
+                num2 = -1;
+                switch (num1)
+                {
+                    case 2:
+                        {
+                            MiscFUncs.MsgBox_Renamed(Information.Err().Description, (short)48, "Error accessing drive");
+
+                            if (num2 == 0)
+                                return;
+
+                            ProjectData.ClearProjectError();
+                            return;
+                        }
+                }
             }
             throw ProjectData.CreateProjectError(-2146828237);
-        label_9:
-            if (num2 == 0)
-                return;
-            ProjectData.ClearProjectError();
         }
 
         private void frmSUFIMain_Activated(object eventSender, EventArgs eventArgs)
