@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5703708C-369F-4345-B920-0D6FC85B84E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Macro5._3</RootNamespace>
+    <AssemblyName>Macro5.3</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb">
+      <HintPath>..\src\dlls\adodb.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AxDataComboArray">
+      <HintPath>..\src\dlls\AxDataComboArray.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.ComCtl2">
+      <HintPath>..\src\dlls\AxInterop.ComCtl2.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.ComctlLib">
+      <HintPath>..\src\dlls\AxInterop.ComctlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MSDataListLib">
+      <HintPath>..\src\dlls\AxInterop.MSDataListLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MSFlexGridLib">
+      <HintPath>..\src\dlls\AxInterop.MSFlexGridLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxMSFlexGridArray">
+      <HintPath>..\src\dlls\AxMSFlexGridArray.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ComctlLib">
+      <HintPath>..\src\dlls\Interop.ComctlLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MACRO5">
+      <HintPath>..\src\dlls\MACRO5.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="msdatasrc">
+      <HintPath>..\src\dlls\msdatasrc.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="MACRO_52\CAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\cChaparDate.cs" />
+    <Compile Include="MACRO_52\cChaparDates.cs" />
+    <Compile Include="MACRO_52\CDisaggregation.cs" />
+    <Compile Include="MACRO_52\CfrmAddFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmExeParWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmLHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmNewSUFIProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmSaveAs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmSoilProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmSUFIMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\ChecksAndAssignments.cs" />
+    <Compile Include="MACRO_52\clsLHSParameters.cs" />
+    <Compile Include="MACRO_52\clsSelVar.cs" />
+    <Compile Include="MACRO_52\collChaparDates.cs" />
+    <Compile Include="MACRO_52\collCParameters.cs" />
+    <Compile Include="MACRO_52\collCRainfall.cs" />
+    <Compile Include="MACRO_52\CParameters.cs" />
+    <Compile Include="MACRO_52\CRainfall.cs" />
+    <Compile Include="MACRO_52\FootprintPedotransfer.cs" />
+    <Compile Include="MACRO_52\frmAggregateOutputs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmAnalyseSUFI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmChapar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmExecuteMACRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmFOOTPRINTPedotransferInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmNewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmNewSUFIIteration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmPedotransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmRainfallDisagg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmSetWeights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmSUFICovariation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\GlobalVariables.cs" />
+    <Compile Include="MACRO_52\HelpFunctions.cs" />
+    <Compile Include="MACRO_52\Horizon.cs" />
+    <Compile Include="MACRO_52\Indump.cs" />
+    <Compile Include="MACRO_52\MACROConstants.cs" />
+    <Compile Include="MACRO_52\MiscFUncs.cs" />
+    <Compile Include="MACRO_52\My\MyApplication.cs" />
+    <Compile Include="MACRO_52\My\MyComputer.cs" />
+    <Compile Include="MACRO_52\My\MyProject.cs" />
+    <Compile Include="MACRO_52\My\MySettings.cs" />
+    <Compile Include="MACRO_52\My\Resources\Resources.cs" />
+    <Compile Include="MACRO_52\ReadSaveFunctions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MACRO_52.CAbout.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmAddFile.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmExeParWizard.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmLHS.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmMain.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmNewSUFIProject.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmOptions.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmOutput.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmParameters.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmSave.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmSaveAs.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmSetup.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmSoilProperties.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmSUFIMain.resources" />
+    <EmbeddedResource Include="MACRO_52.frmAggregateOutputs.resources" />
+    <EmbeddedResource Include="MACRO_52.frmAnalyseSUFI.resources" />
+    <EmbeddedResource Include="MACRO_52.frmBatch.resources" />
+    <EmbeddedResource Include="MACRO_52.frmChapar.resources" />
+    <EmbeddedResource Include="MACRO_52.frmExecuteMACRO.resources" />
+    <EmbeddedResource Include="MACRO_52.frmFOOTPRINTPedotransferInput.resources" />
+    <EmbeddedResource Include="MACRO_52.frmNewProject.resources" />
+    <EmbeddedResource Include="MACRO_52.frmNewSUFIIteration.resources" />
+    <EmbeddedResource Include="MACRO_52.frmOpen.resources" />
+    <EmbeddedResource Include="MACRO_52.frmPedotransfer.resources" />
+    <EmbeddedResource Include="MACRO_52.frmProgress.resources" />
+    <EmbeddedResource Include="MACRO_52.frmRainfallDisagg.resources" />
+    <EmbeddedResource Include="MACRO_52.frmSetWeights.resources" />
+    <EmbeddedResource Include="MACRO_52.frmSUFICovariation.resources" />
+    <EmbeddedResource Include="MACRO_52.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

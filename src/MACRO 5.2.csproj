@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A040BEC4-9B7B-4670-90E4-674EFB552BD0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>MACRO 5.2</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="AxInterop.MSFlexGridLib">
+      <HintPath>dlls\AxInterop.MSFlexGridLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ADODB">
+      <HintPath>dlls\adodb.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="AxMSFlexGridArray">
+      <HintPath>dlls\AxMSFlexGridArray.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.ComCtl2">
+      <HintPath>dlls\AxInterop.ComCtl2.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.ComctlLib">
+      <HintPath>dlls\AxInterop.ComctlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
+    <Reference Include="AxInterop.MSDataListLib">
+      <HintPath>dlls\AxInterop.MSDataListLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxDataComboArray">
+      <HintPath>dlls\AxDataComboArray.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="MACRO5">
+      <HintPath>dlls\MACRO5.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ComctlLib">
+      <HintPath>dlls\Interop.ComctlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MSDATASRC">
+      <HintPath>dlls\msdatasrc.dll</HintPath>
+    </Reference>
+    <Compile Include="Global.cs" />
+    <Compile Include="MACRO_52\My\MyApplication.cs" />
+    <Compile Include="MACRO_52\My\MyComputer.cs" />
+    <Compile Include="MACRO_52\My\MyProject.cs" />
+    <Compile Include="MACRO_52\cChaparDate.cs" />
+    <Compile Include="MACRO_52\cChaparDates.cs" />
+    <Compile Include="MACRO_52\collChaparDates.cs" />
+    <Compile Include="MACRO_52\collCParameters.cs" />
+    <Compile Include="MACRO_52\CParameters.cs" />
+    <Compile Include="MACRO_52\FootprintPedotransfer.cs" />
+    <Compile Include="MACRO_52\CDisaggregation.cs" />
+    <Compile Include="MACRO_52\collCRainfall.cs" />
+    <Compile Include="MACRO_52\CRainfall.cs" />
+    <Compile Include="MACRO_52\clsLHSParameters.cs" />
+    <Compile Include="MACRO_52\clsSelVar.cs" />
+    <Compile Include="MACRO_52\MACROConstants.cs" />
+    <Compile Include="MACRO_52\GlobalVariables.cs" />
+    <Compile Include="MACRO_52\HelpFunctions.cs" />
+    <Compile Include="MACRO_52\Horizon.cs" />
+    <Compile Include="MACRO_52\Indump.cs" />
+    <Compile Include="MACRO_52\MiscFUncs.cs" />
+    <Compile Include="MACRO_52\ReadSaveFunctions.cs" />
+    <Compile Include="MACRO_52\My\MySettings.cs" />
+    <Compile Include="MACRO_52\ChecksAndAssignments.cs" />
+    <Compile Include="MACRO_52\CfrmAddFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmSoilProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmExecuteMACRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmExeParWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmNewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmSaveAs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmChapar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmFOOTPRINTPedotransferInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmLHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmPedotransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmRainfallDisagg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmAggregateOutputs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmAnalyseSUFI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmNewSUFIIteration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmNewSUFIProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmSetWeights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\frmSUFICovariation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\CfrmSUFIMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACRO_52\My\Resources\Resources.cs" />
+    <EmbeddedResource Include="MACRO_52.CfrmExeParWizard.resources" />
+    <EmbeddedResource Include="MACRO_52.frmOpen.resources" />
+    <EmbeddedResource Include="MACRO_52.CAbout.resources" />
+    <EmbeddedResource Include="MACRO_52.Resources.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmOptions.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmSave.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmSUFIMain.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmNewSUFIProject.resources" />
+    <EmbeddedResource Include="MACRO_52.frmNewSUFIIteration.resources" />
+    <EmbeddedResource Include="MACRO_52.frmAggregateOutputs.resources" />
+    <EmbeddedResource Include="MACRO_52.frmNewProject.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmMain.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmOutput.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmSoilProperties.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmSetup.resources" />
+    <EmbeddedResource Include="MACRO_52.frmBatch.resources" />
+    <EmbeddedResource Include="MACRO_52.frmAnalyseSUFI.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmSaveAs.resources" />
+    <EmbeddedResource Include="MACRO_52.frmPedotransfer.resources" />
+    <EmbeddedResource Include="MACRO_52.frmFOOTPRINTPedotransferInput.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmLHS.resources" />
+    <EmbeddedResource Include="MACRO_52.frmChapar.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmParameters.resources" />
+    <EmbeddedResource Include="MACRO_52.frmRainfallDisagg.resources" />
+    <EmbeddedResource Include="MACRO_52.frmSetWeights.resources" />
+    <EmbeddedResource Include="MACRO_52.frmExecuteMACRO.resources" />
+    <EmbeddedResource Include="MACRO_52.frmSUFICovariation.resources" />
+    <EmbeddedResource Include="MACRO_52.CfrmAddFile.resources" />
+    <EmbeddedResource Include="MACRO_52.frmProgress.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+</Project>
